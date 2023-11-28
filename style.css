@@ -1,0 +1,25 @@
+/* #region common# */
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root
+{
+    --sp-dark: #000000;
+    --sp-primary: #141922;
+    --sp-secondary: #282828;
+    --sp-accent: #ADFF2F;
+    --sp-grey: #7B7D82;
+    --sp-white: #FFFFFF;
+}
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* #endregion common# */
+
