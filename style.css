@@ -38,6 +38,11 @@ ul
     list-style: none;
 }
 
+h3
+{
+    font-size: 12px;
+}
+
 /* #endregion common# */
 
 /* #region utility# */
@@ -52,6 +57,30 @@ ul
 .align_items_center
 {
     align-items: center;
+}
+.justify_content_between
+{
+    justify-content: space-between;
+}
+
+
+
+
+.text_uppercase
+{
+    text-transform: uppercase;
+}
+
+
+.pr_2
+{
+
+    padding-right: 1rem;
+}
+
+.mb_1
+{
+    margin-bottom: 0.5rem;
 }
 
 
@@ -74,6 +103,7 @@ ul
     padding: 0.75rem;
     line-height: 1.5rem;
     font-size: 12px;
+    align-self: self-end;
 
     & .logo
     {
@@ -82,26 +112,36 @@ ul
     & .menu
     {
         margin-bottom: 0.5rem;
-        & .mobile, .dekstop
-        {
-            & a
+        & a
             {
                 color: var(--sp-grey);
-            }
-        }
-        
+            } 
     }
+    & .playlist, .user
+    {
+        & a
+        {
+            color: var(--sp-grey);
+        }
+    }
+    & .user
+    {
+        & .download_image
+        {
+            width: 15px;
+            margin-right: 0.5rem;
+        }
+
+    }
+
 }    
 
 .dekstop
 {
-    display: none; 
-    & i
-    {
-
-        padding-right: 1rem;
-    } 
+    display: none;  
+  
 }
+
 /* #endregion main# */
 
 /* #region footer# */
@@ -131,7 +171,7 @@ ul
     }
     .dekstop
     {
-        display: inline-flex;
+        display: block;
     }
     .mobile
     {

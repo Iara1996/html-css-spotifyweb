@@ -12,45 +12,68 @@
 </head>
 <body>
     <div class="wrapper">
-        <header id="site_header">
-            <div class="container d_flex fd_column align_items_xs_center">
-                <div class="logo">
-                    <div class="mobile">
-                        <img width="25px" src="./img/logo-small.svg" alt="logo">
+    
+            <header id="site_header" class="container d_flex fd_column align_items_xs_center justify_content_between">
+                <div class="header_top">
+<!--LOGO-->                    
+                    <div class="logo">
+                        <div class="mobile">
+                            <img width="25px" src="./img/logo-small.svg" alt="logo">
+                        </div>
+                        <div class="dekstop">
+                            <img width="100px" src="./img/logo.svg" alt="logo">
+                        </div>
                     </div>
-                    <div class="dekstop">
-                        <img width="100px" src="./img/logo.svg" alt="logo">
+    <!--MENU-->
+                    <div class="menu">
+                        <ul class="d_flex fd_column">
+                            <li class="mobile">
+                                <a href="#"><i class="fa-solid fa-house fa-fw fa-xl"></i></a>    
+                            </li>
+                            <li class="dekstop">
+                                <a href="#"><i class="fa-solid fa-house fa-fw fa-lg pr_2"></i>Home</a>     
+                            </li>
+                            <li class="mobile">
+                                <a href="#"><i class="fa-solid fa-search fa-fw fa-xl"></i></a>    
+                            </li>
+                            <li class="dekstop">
+                                <a href="#"><i class="fa-solid fa-search fa-fw fa-lg pr_2"></i>Cerca</a>     
+                            </li>
+                            <li class="mobile">
+                                <a href="#"><i class="fa-solid fa-lines-leaning fa-fw fa-xl"></i></a>    
+                            </li>
+                            <li class="dekstop">
+                                <a href="#"><i class="fa-solid fa-lines-leaning fa-fw fa-lg pr_2"></i>La tua libreria</a>     
+                            </li>
+                        </ul>
+                    </div>
+    <!--PLAYLIST-->
+                    <div class="playlist dekstop d_flex fd_column">
+                        <h3 class="text_uppercase">Playlist</h3>
+                        <ul class="d_flex fd_column">
+                            <li class="mb_1">
+                                <a class="d_flex align_items_center" href="#"><i class="fa-solid fa-square-plus fa-fw fa-2x"></i>Crea Playlist</a>
+                            </li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="menu">
-                    <ul class="d_flex fd_column">
-                        <li class="mobile">
-                            <a href="#"><i class="fa-solid fa-house fa-fw fa-lg"></i></a>    
-                        </li>
-                        <li class="dekstop">
-                            <a href="#"><i class="fa-solid fa-house fa-fw fa-lg"></i>Home</a>     
-                        </li>
-                        <li class="mobile">
-                            <a href="#"><i class="fa-solid fa-search fa-fw fa-lg"></i></a>    
-                        </li>
-                        <li class="dekstop">
-                            <a href="#"><i class="fa-solid fa-search fa-fw fa-lg"></i>Cerca</a>     
-                        </li>
-                        <li class="mobile">
-                            <a href="#"><i class="fa-solid fa-lines-leaning fa-fw fa-lg"></i></a>    
-                        </li>
-                        <li class="dekstop">
-                            <a href="#"><i class="fa-solid fa-lines-leaning fa-fw fa-lg"></i>La tua libreria</a>     
-                        </li>
-                    </ul>
-
-
-
+                <div class="header_bottom">
+<!--USER-->
+                    <div class="user d_flex align_items_center">
+                        <img class="download_image" src="./img/download.svg" alt="download">
+                        <a href="#">Installa app</a>
+                    </div>
                 </div>
-
-            </div>
-        </header>
-
+             
+            </header>
+        
 
         <footer id="site_footer">
             <div class="container d_flex">
