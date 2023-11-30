@@ -10,11 +10,11 @@
 <link rel="stylesheet" href="./style.css">
     <title>Spotify</title>
 </head>
-<body>
+<body class="">
     <div class="wrapper">
-    
-            <header id="site_header" class="container d_flex fd_column align_items_xs_center justify_content_between">
-                <div class="header_top">
+        <div class="d_flex">
+            <div class="sidebar d_flex fd_column align_items_xs_center justify_content_between">
+                <div class="sidebar_top">
                     <!--LOGO-->                    
                     <div class="logo">
                         <div class="mobile">
@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <!--MENU-->
-                    <div class="menu">
+                    <nav class="menu">
                         <ul class="d_flex fd_column">
                             <li class="mobile">
                                 <a href="#"><i class="fa-solid fa-house fa-fw fa-xl"></i></a>    
@@ -46,7 +46,7 @@
                                 <a href="#"><i class="fa-solid fa-lines-leaning fa-fw fa-lg pr_2"></i>La tua libreria</a>     
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                     <!--PLAYLIST-->
                     <div class="playlist dekstop d_flex fd_column">
                         <h3 class="text_uppercase">Playlist</h3>
@@ -64,7 +64,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="header_bottom">
+                <div class="sidebar_bottom">
                     <!--USER-->
                     <div class="user">
                         <div class="mobile d_flex fd_column align_items_center">
@@ -80,12 +80,17 @@
                             <img class="profile_image mr_2" src="./img/profile.svg" alt="profile">
                             <span class="fw_bold">John Doe</span>  
                         </div>
-                        
                     </div>
                 </div>
-            </header>
+            </div>
+            <main>
+                <!--UPGRADE-->
+                <div class=" d_flex">
+                    <button class="btn btn_outline text_uppercase">Effettua l'upgrade</button>
+                </div>    
+            </main>
+        </div>
         
-
         <footer id="site_footer">
             <div class="container d_flex">
                 <div>lorem</div>
@@ -94,8 +99,12 @@
             </div>
             
         </footer>
+            
+            
 
-    </div>
+    </div> 
     
 </body>
+
+
 </html>
