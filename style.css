@@ -170,6 +170,7 @@ main
 .top
 {
 	height: calc(100% - 100px);
+    display: inline-flex;
 }
 .sidebar
 {
@@ -315,5 +316,32 @@ hr
         display: none;
     }
 }
+
+@media screen and (min-width: 768px)
+{
+    .col_md_3
+    {
+        width: calc(100% / 12 * 3);
+    }
+    .container
+    {    
+        max-width: 696px;  
+    }
+}
+
+@media screen and (min-width: 1200px)
+{
+    .col_lg_2
+    {
+        width: calc(100% / 12 * 2);
+    }
+    .container
+    {    
+        max-width: 1140px;  
+    }
+
+}
+
+
 /* #endregion responsive# */
 
