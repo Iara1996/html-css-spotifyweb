@@ -33,15 +33,15 @@ body
 {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -0.5rem
+	margin: 0 -0.5rem;
 }
 
-[class^="col-"]
+[class^="col_"]
 {
 	padding: 0 0.5rem;
 }
 
-.col-6
+.col_6
 {
 	width: 50%;
 }
@@ -49,6 +49,11 @@ body
 .wrapper
 {
     height: 100vh;
+}
+
+img
+{
+    max-width: 100%;
 }
 
 a
@@ -158,7 +163,7 @@ h3
 /* #endregion utility# */
 
 /* #region main# */
-main
+.top
 {
 	height: calc(100% - 100px);
 }
@@ -166,7 +171,7 @@ main
 {
     background-color: var(--sp-dark);
     width: 10vh;
-    height: 90vh;
+    height: calc(100vh - 100px);
     padding: 0.75rem;
     line-height: 1.5rem;
     font-size: 12px;
@@ -240,10 +245,30 @@ hr
     }
 }
 
+.recently_played
+{
+    & h2
+    {
+        font-size: 14px;
+        padding: 0.5rem 0;
+    }
+    & .card_text
+    {
+        text-align: center;
+        & h3
+        {
+            font-size: 10px;
+            padding: 0.5rem 0;
+        }
+        & h4
+        {
+            color: var(--sp-grey);
+            font-size: 10px;
+            font-weight: lighter;
+        }
 
-
-
-
+    }
+}
 
 /* #endregion main# */
 
