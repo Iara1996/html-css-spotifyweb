@@ -329,6 +329,15 @@ hr
     }
 }
 
+@media screen and (min-width: 937px) and (max-width: 1299px)
+{
+    .container
+    {    
+        max-width: 1188px;  
+    }
+
+}
+
 @media screen and (min-width: 1200px)
 {
     .col_lg_2
