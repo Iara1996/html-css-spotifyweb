@@ -171,6 +171,16 @@ ul
     color: var(--sp-white);
 }
 
+.bar_btn
+{
+    content: '';
+    height: 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--sp-white);
+    display: none;
+}
+
 
 
 /* #endregion utility# */
@@ -517,5 +527,27 @@ hr
 {
     font-size: 30px;   
 }
+
+.center, .right
+{
+    & .timeline
+    {
+        & .fill:hover
+        {
+            background-color: var(--sp-accent);
+            height: 4px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        & .bar_btn:hover
+        {
+            display: block;
+        }  
+    }
+} 
+
+
+
+ 
 
 /* #endregion animations*/
