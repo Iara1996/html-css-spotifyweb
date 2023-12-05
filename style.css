@@ -212,7 +212,7 @@ main
     }
     & .menu
     {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.5rem;   
         & a
         {
             color: var(--sp-grey);
@@ -220,9 +220,13 @@ main
         & ul
         {
             gap: 0.75rem;
-        }
-             
+            & li > a:first-child
+            {
+                color: var(--sp-white);
+            }
+        }        
     }
+
     & .playlist h3
     {
         padding: 1rem 0;
@@ -523,6 +527,11 @@ hr
         text-decoration: underline;
     } 
 }
+.action i:hover
+{
+    color: var(--sp-white);
+}
+
 .controls .big:hover
 {
     font-size: 30px;   
