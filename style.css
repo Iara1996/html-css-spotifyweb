@@ -306,13 +306,13 @@ hr
     & h4
     {
         color: var(--sp-grey);
-        font-size: 16px;
+        font-size: 15px;
         font-weight: lighter;
         padding-bottom: 0.75rem;
     }
     & h3
     {
-        font-size: 16px;
+        font-size: 15px;
         padding: 0.5rem 0;
     }
     & .card_text
@@ -321,10 +321,37 @@ hr
     }
 }
 
+.card_image
+{
+    position: relative;
+
+}
+.play
+{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    display: none;
+}
+.card_image:hover
+{
+    & img
+    {
+        opacity: 0.1;
+    }
+    & .play
+    {
+        display: block;
+
+    }
+    
+}
+
 .popular .card_image img
 {
     border-radius: 50%;
 }
+
 
 /* #endregion main# */
 
